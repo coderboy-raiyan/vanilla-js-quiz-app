@@ -82,13 +82,22 @@ function spy() {
 spy();
 nextBtn.addEventListener("click", spy);
 
+function removeradio() {
+  answers.forEach((currValue) => {
+    if (currValue.checked) {
+      currValue.checked = false;
+    }
+  });
+}
+
 nextBtn.addEventListener("click", () => {
   let checked = checkAnswer();
+
   if (checked == quizbd[qestionCount].ans) {
     score++;
   }
-
   qestionCount++;
+  removeradio();
   //   quizSpy.innerHTML = `${qestionCount} Of ${quizbd.length} Questions`;
   if (qestionCount < quizbd.length) {
     checkOption();
