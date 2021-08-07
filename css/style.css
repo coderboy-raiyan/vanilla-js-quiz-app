@@ -111,6 +111,17 @@ Main CSS
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   margin: auto;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  border: 1px solid #fff;
+}
+.next-btn:hover {
+  background: #fff;
+  color: #e63188;
+  border-color: #e63188;
 }
 .results {
   background: #e8e3fc;
@@ -136,6 +147,11 @@ Main CSS
   background: transparent;
   border: 1.5px solid #e63188;
   color: #e63188;
+  transition: all 0.3s;
+}
+.results button:hover {
+  background: #e63188;
+  color: #fff;
 }
 .active {
   display: block;
