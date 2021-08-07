@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-app</title>
+    <!-- CSS Style sheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="main-conatiner">
+      <div class="quizes">
+        <h1 class="quiz-question">Give answes</h1>
+        <ul>
+          <li>
+            <label for="ans1" class="option">
+              <input type="radio" name="answer" class="answer" id="ans1" />
+              <span class="option1">Answer one</span>
+            </label>
+          </li>
+          <li>
+            <label for="ans2" class="option">
+              <input type="radio" name="answer" class="answer" id="ans2" /><span
+                class="option2"
+                >Answer one</span
+              ></label
+            >
+          </li>
+          <li>
+            <label for="ans3" class="option">
+              <input type="radio" name="answer" class="answer" id="ans3" /><span
+                class="option3"
+                >Answer one</span
+              ></label
+            >
+          </li>
+          <li>
+            <label for="ans4" class="option"
+              ><input
+                type="radio"
+                name="answer"
+                class="answer"
+                id="ans4"
+              /><span class="option4">Answer one</span></label
+            >
+          </li>
+        </ul>
+        <p class="quiz-spy"></p>
+        <button class="btn next-btn">Next</button>
+        <div class="results">
+          <div class="result">
+            <p>Your Score</p>
+            <h1 class="score-gain">10/10</h1>
+          </div>
+          <button class="btn play-again" onclick="window.location.reload()">
+            Play again
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
